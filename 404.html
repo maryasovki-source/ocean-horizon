@@ -6,9 +6,6 @@
     <meta name="description" content="Dream Come True — честная история людей, проверяющих мечту океаном. Кругосветная медиа-экспедиция на парусном катамаране. FOLLOW THE DREAM." />
     <title>Dream Come True — кругосветная экспедиция · Season 0</title>
     <script>
-      // Path fix: bundle router has basename "/ocean-horizon".
-      // On github.io the site already lives under /ocean-horizon/ -> no-op.
-      // On the custom domain we remap to /ocean-horizon/ so the router matches.
       (function () {
         var onGH = /(^|\.)github\.io$/.test(location.hostname);
         if (!onGH && location.pathname.indexOf('/ocean-horizon') !== 0) {
@@ -27,7 +24,6 @@
       })();
     </script>
     <script>
-      // Temporary rebrand overlay (until source rebuild): Ocean Horizon -> Dream Come True
       (function () {
         var R = [
           ['Ocean Horizon', 'Dream Come True'],
