@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Восстановление URL после SPA-редиректа GitHub Pages (см. public/404.html)
+      (function () {
+        var r = sessionStorage.redirect
+        delete sessionStorage.redirect
+        if (r && r !== location.pathname + location.search + location.hash) {
+          history.replaceState(null, '', r)
+        }
+      })()
+    </script>
     <meta name="description" content="Dream Come True — яхта мечты. Кругосветная медиа- и благотворительная экспедиция Ocean Horizon: 36 месяцев вокруг света. Follow the dream." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     <title>Dream Come True — Follow the Dream · Экспедиция Ocean Horizon</title>
-    <script type="module" crossorigin src="./assets/index-BH9V2Syw.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BJb4M1XS.css">
+    <script type="module" crossorigin src="./assets/index-DIaR45Rn.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CVnQSEih.css">
   </head>
   <body>
     <div id="root"></div>
